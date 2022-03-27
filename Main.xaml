@@ -1,0 +1,933 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="694.4,2810.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="98">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>Microsoft.Exchange.WebServices.Data</x:String>
+      <x:String>UiPath.Mail.Exchange</x:String>
+      <x:String>UiPath.Mail.Exchange.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="72">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>Microsoft.Exchange.WebServices</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="627.2,2745.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_ExtractDataTable" />
+      <Variable x:TypeArguments="ui:Browser" Name="ObjBrowser" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_ExtractDataTableEu" />
+      <Variable x:TypeArguments="x:Double" Name="double_tmp" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_Result" />
+      <Variable x:TypeArguments="x:Int32" Name="int_RowsCount" />
+      <Variable x:TypeArguments="x:String" Name="pass" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="585.6,1585.6" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[ObjBrowser]" Url="https://www.moex.com/">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do Browser" sap:VirtualizedContainerService.HintSize="552,1483.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Default="False" Name="bool_Exists" />
+              <Variable x:TypeArguments="x:Int32" Name="int_RowIndex" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="510.4,22.4" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Extract Data&quot;]" />
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Chrome_RenderWidgetHost...'" sap:VirtualizedContainerService.HintSize="510.4,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="09df166a-7b1d-4fe0-a94c-b59b2e3a3dcf" InformativeScreenshot="dda3f92b77b5ea722cee27f8bdeb35ee" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nav&amp;gt;span&amp;gt;button&amp;gt;svg&amp;gt;use' tag='use' /&gt;" WaitForReady="COMPLETE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:Click.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:Click>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Chrome_RenderWidgetHost...'" sap:VirtualizedContainerService.HintSize="510.4,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1005b044-0a8b-4697-9642-50409a572253" InformativeScreenshot="d762c6d59f288e9c643e31c68dfc2633" Selector="&lt;webctrl aaname='Срочный рынок' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nav&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a' parentid='redesign-2021' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:Click>
+            <ui:UiElementExists DisplayName="Element Exists 'A  javascript:void(0)'" Exists="[bool_Exists]" sap:VirtualizedContainerService.HintSize="510.4,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="45dcd4ff-41b7-4f5d-8ab9-a875f7a164ed" InformativeScreenshot="c84d4fef0963ce9ecb567a700fdea270" Selector="&lt;html app='chrome.exe' title='Срочный рынок — Московская Биржа | Рынки' /&gt;&lt;webctrl aaname='Не согласен' aria-role='button' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+            <If Condition="[bool_Exists]" DisplayName="If Exists &quot;Согласен&quot;" sap:VirtualizedContainerService.HintSize="510.4,552" sap2010:WorkflowViewState.IdRef="If_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="475.2,363.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="433.6,270.4" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                    <TryCatch.Try>
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'A  /'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="da6b6fc5-3c11-4260-857a-febe73c44d8a" InformativeScreenshot="5a0ec1268916082c0168a086f7ab1298" Selector="&lt;html app='chrome.exe' title='Срочный рынок — Московская Биржа | Рынки' /&gt;&lt;webctrl aria-role='button' tag='A' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,105.6" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /ru/derivatives/curr...'" sap:VirtualizedContainerService.HintSize="510.4,52.8" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c6acef79-50fb-4777-a718-9947f02cb5db" InformativeScreenshot="b3f171b5c90a920acbcd7bd981ba7eee" Selector="&lt;webctrl aaname='                                                     Индикативны*' parentid='ctl00_frmLeftMenuWrap' tag='A' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:Click>
+            <Sequence DisplayName="ExtractData" sap:VirtualizedContainerService.HintSize="510.4,68.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Choice USD" sap:VirtualizedContainerService.HintSize="433.6,561.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="c49a2456-58ab-4cc1-9feb-32ec3d4e3d78" Version="V1">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="375.2,344.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NSelectItem DisplayName="Select Item" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="USD/RUB - Доллар США к российскому рублю" ScopeIdentifier="c49a2456-58ab-4cc1-9feb-32ec3d4e3d78">
+                        <uix:NSelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="19">
+                            <x:String>USD/RUB - Доллар США к российскому рублю</x:String>
+                            <x:String>EUR/RUB - Евро к российскому рублю</x:String>
+                            <x:String>CAD/RUB - Канадский доллар к российскому рублю</x:String>
+                            <x:String>CHF/RUB - Швейцарский франк к российскому рублю</x:String>
+                            <x:String>GBP/RUB - Британский фунт к российскому рублю</x:String>
+                            <x:String>JPY/RUB - Японская йена к российскому рублю</x:String>
+                            <x:String>CNY/RUB - Китайский юань к российскому рублю</x:String>
+                            <x:String>TRY/RUB - Турецкая лира к российскому рублю</x:String>
+                            <x:String>UAH/RUB - Украинская гривна к российскому рублю</x:String>
+                            <x:String>INR/RUB – Индийская рупия к российскому рублю</x:String>
+                            <x:String>HKD/RUB - Гонконгский доллар к российскому рублю</x:String>
+                            <x:String>USD/CAD - Доллар США к канадскому доллару</x:String>
+                            <x:String>USD/CHF - Доллар США к швейцарскому франку</x:String>
+                            <x:String>USD/JPY - Доллар США к японской йене</x:String>
+                            <x:String>USD/CNY - Доллар США к китайскому юаню</x:String>
+                            <x:String>USD/TRY - Доллар США к турецкой лире</x:String>
+                            <x:String>USD/UAH - Доллар США к украинской гривне</x:String>
+                            <x:String>USD/INR - Доллар США к индийской рупии</x:String>
+                            <x:String>USD/HKD - Доллар США к гонконгскому доллару</x:String>
+                          </scg:List>
+                        </uix:NSelectItem.Items>
+                        <uix:NSelectItem.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" DesignTimeRectangle="941, 620, 472, 24" ElementType="DropDown" FriendlyName="'USD/RUB -'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' aaname='' /&gt;" Guid="9140be9e-0980-4a0c-a572-8d760d437533" InformativeScreenshot="9896ebe855888d112a747273bd4ce29d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="FuzzySelector">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="765, 620, 170, 19" ElementType="Text" FriendlyName="'Выберите валюты'" FullSelectorArgument="&lt;webctrl aaname='Выберите валюты:' parentid='currency-rate-container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Выберите валюты:' parentid='currency-rate-container' tag='DIV' type='' check:text='Выберите валюты:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAK4AAAAXCAYAAACSyXRTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALISURBVGhD7ZdtbvMgEITfO+VcyVWs3iQ9SZVjVModeAPLxzI7uLZbqaHZkfhhwLA7+4CTf8HlmlAOrmtKObiuKeXguqaUg+uaUg6ua0o5uK4ptQ3cz2u4nE7hVNslXD/z2E8p7nG+hnt+dLnWtAPcJdzy4/39IgC/lZ5jur3pw3AKl3fH1rVNh8BN+lgesEHfDiVo/YZ1HdTPgbsK8i0s3c8LfB7pHq7nciPj/DgW++JaZQ7uz/ZpffXLgU1/SVJepN9IxyFt+chDVTofMm5+ksXWckrxQgxdDmpsPTeJY/SFw33is83ld3UQ3FwkbeIecON65yUsqojN1CLZo5qbi9oMLBC0PeWnB8YJ4KZ1GMwWJCk+rD/8SuBeED8+szjQZ/AUgerjyX50Hkax3PaAK+8/29fx4J8zksgecPMt1pvZG4xFikp9UKj1gsC+pQibwMV3o9i8Ijuf5dBE4NkDLs6NYoeBxrwH3OfUN38qKJMyjH0r70BRB5CnGyQbJrcna+U9Bm6/Rr9vKaAFrI3lxyh2WHPjBYd18/s0vtFa6PMauHHM3ILME5Jbnqfj0LH8bXDx1BIYG0RQVGq6Nmz9RhDtAVevB7EkkeIODtdYssYIhjpeYyM5oi8QQ/JHr/9NcLu9U43Fl5cAtyY4AjeZC7DQ9WR+MbMHkIkVCQsi+15I35fgqkJuE1lXe4JQmlgzMF+Bu+L35tzI3pKvzPvb4CbjlCHGSDFMzEFDAfqo9L6aw8CJc2phLbhyI9kY+iJsLe6j1xweu2cTWVd7YvxBeAhM8E4PlMS8Cn4Sy83upb1DcPWF8iw6/ucMzUgmw5zOZA6Lnm+AMGvawo/Ho0b7bgOX7TEuoM0nNr1mOgh1TH0Jqr8Q/yq4D5m6YP5RLDfmXfOEHRB7IH5X28B9Son5FjbXK8jBdU0pB9c1pSYG1/XKcnBdEyqE/055FsIvQugNAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NSelectItem.Target>
+                      </uix:NSelectItem>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Игнорируемые действия" sap:VirtualizedContainerService.HintSize="375.2,250.4" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NSelectItem DisplayName="Select Item 'Chrome Legacy Window'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="USD/RUB - Доллар США к российскому рублю" ScopeIdentifier="c49a2456-58ab-4cc1-9feb-32ec3d4e3d78">
+                              <uix:NSelectItem.Items>
+                                <scg:List x:TypeArguments="x:String" Capacity="19">
+                                  <x:String>USD/RUB - Доллар США к российскому рублю</x:String>
+                                  <x:String>EUR/RUB - Евро к российскому рублю</x:String>
+                                  <x:String>CAD/RUB - Канадский доллар к российскому рублю</x:String>
+                                  <x:String>CHF/RUB - Швейцарский франк к российскому рублю</x:String>
+                                  <x:String>GBP/RUB - Британский фунт к российскому рублю</x:String>
+                                  <x:String>JPY/RUB - Японская йена к российскому рублю</x:String>
+                                  <x:String>CNY/RUB - Китайский юань к российскому рублю</x:String>
+                                  <x:String>TRY/RUB - Турецкая лира к российскому рублю</x:String>
+                                  <x:String>UAH/RUB - Украинская гривна к российскому рублю</x:String>
+                                  <x:String>INR/RUB – Индийская рупия к российскому рублю</x:String>
+                                  <x:String>HKD/RUB - Гонконгский доллар к российскому рублю</x:String>
+                                  <x:String>USD/CAD - Доллар США к канадскому доллару</x:String>
+                                  <x:String>USD/CHF - Доллар США к швейцарскому франку</x:String>
+                                  <x:String>USD/JPY - Доллар США к японской йене</x:String>
+                                  <x:String>USD/CNY - Доллар США к китайскому юаню</x:String>
+                                  <x:String>USD/TRY - Доллар США к турецкой лире</x:String>
+                                  <x:String>USD/UAH - Доллар США к украинской гривне</x:String>
+                                  <x:String>USD/INR - Доллар США к индийской рупии</x:String>
+                                  <x:String>USD/HKD - Доллар США к гонконгскому доллару</x:String>
+                                </scg:List>
+                              </uix:NSelectItem.Items>
+                              <uix:NSelectItem.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="1, 1, 473, 387" FriendlyName="'Chrome Legacy Window'" FullSelectorArgument="&lt;wnd cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' check:text='Chrome Legacy Window' /&gt;" Guid="14d490ad-8b49-4158-88ca-c0b4d50c54f7" InformativeScreenshot="9f563868a9fff4d6b106a12d5b014f9c.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                              </uix:NSelectItem.Target>
+                            </uix:NSelectItem>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALeSURBVFhH7VZdSJNRGDbopqzs15+UbtIsS820giIq7CYNyiiKoC7M6CbqosCL/oMEi3IkWagFUQpBdGEEYj/qNgtTHGXloppmumopbljmfp/e8/MtNz7nqkkX7YGHne+cZ+d9znve75wvQj93Gf4ZE7IQNvCfG4jPDGcgSANxGdDNTlUf8+fvaIPJgHZGCvTR6WhZngPtzMWqGi9Z8Og0tK7I5f/TzVqirlM4pgGazLB+O/pr6+GyDcJYcASNkYnqWgreOCUJnWdK4Br8hs+37qIlcyM3r6pnDLQFOlqtIXsHPA4HFHicThj3qphgwSMp+MkLUing+NqP5tRs6Oek+eoVBsqAdvoitOcVyKl+gZno4CaShFZZ+Snf4AwepwutK3NHr4mxDLzYnC+nApwDNtkiuFww5h9G49RkmXaNHBBwWoXW/WOY105IDHzUVKCn9Lp4sDsw1PoShlVbYDp+XvRJvC88C8ud+7wdUgPdF8tRP3EezFdvwv7qHSxXqmGt08tRgS4qwMcTEtBXU8efQ5sBWn3DpPm8OI27DsL28IkcYfDwTLDt0E5LRt+9B7w3tAYuXePVz9h5ukT2ClhrtTCszqOaWABt1MJxMqCpxKOIOHQVlcoeARttg6WsitfEm/2FtAXx42PgQ/FlKrAi+SRgOlqMjp0HqCbe0kvvpIhuvN5zCJbbNXw8pAaGu3tlS4AdOg2TE3lN9JbdkL1UDcN22M1fePuvDbRv3ccn8ofphCg4dgjpY5byc99cWS1HR8DlpoNo058ZYCtrW7sN7u9DcjYB07Fz4hRkwRV9TDo3bK7wNWHv+YTmlHX8Thk5t5eBDDAy521r8jDQ8JRyK181/+AKmYkoMlFexd5Kfhg9S9sA3Wj3AGMw3wMsvU0kfJ6zmwzR9aoWXCGZaKJfrqWrmF/H8So6hWNlwMtYsc/6OJUxf8Zm0HcD0wYwqjBoA+PF8EdpOANhAwlZ+AnZYkxwxkiZagAAAABJRU5ErkJggg==" InformativeScreenshot="836cd5991eead290c70e142b2535ed82.png" Selector="&lt;html app='chrome.exe' title='Индикативные курсы валют — Московская Биржа | Рынки'/&gt;" Url="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" />
+                </uix:NApplicationCard.TargetApp>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NApplicationCard>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="ExtractTable USD" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="5c2a55b8-cc44-492e-a3b8-1068fa62b6c7" Version="V1">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="375.2,252" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Date' ReferenceIdx='0' Name='Date'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='ValueMedium' ReferenceIdx='1' Name='ValueMedium'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Time' ReferenceIdx='2' Name='Time'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Value' ReferenceIdx='3' Name='Value'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='Time2' ReferenceIdx='4' Name='Time2'&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Date' attr='text' /&gt;&lt;column name='ValueMedium' attr='text' /&gt;&lt;column name='Time' attr='text' /&gt;&lt;column name='Value' attr='text' /&gt;&lt;column name='Time2' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="5c2a55b8-cc44-492e-a3b8-1068fa62b6c7" Version="V1">
+                        <uix:NExtractData.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="832, 327, 546, 605" FriendlyName="'Дата Курс'" FullSelectorArgument="&lt;webctrl aaname='Дата Курс промежуточного клиринга Курс основного клиринга Значен*' parentid='currency-rate-container' tag='TABLE' /&gt;" Guid="b71b06ff-05ba-465e-bec0-59155772a0b2" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="Selector" />
+                        </uix:NExtractData.Target>
+                      </uix:NExtractData>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALeSURBVFhH7VZdSJNRGDbopqzs15+UbtIsS820giIq7CYNyiiKoC7M6CbqosCL/oMEi3IkWagFUQpBdGEEYj/qNgtTHGXloppmumopbljmfp/e8/MtNz7nqkkX7YGHne+cZ+d9znve75wvQj93Gf4ZE7IQNvCfG4jPDGcgSANxGdDNTlUf8+fvaIPJgHZGCvTR6WhZngPtzMWqGi9Z8Og0tK7I5f/TzVqirlM4pgGazLB+O/pr6+GyDcJYcASNkYnqWgreOCUJnWdK4Br8hs+37qIlcyM3r6pnDLQFOlqtIXsHPA4HFHicThj3qphgwSMp+MkLUing+NqP5tRs6Oek+eoVBsqAdvoitOcVyKl+gZno4CaShFZZ+Snf4AwepwutK3NHr4mxDLzYnC+nApwDNtkiuFww5h9G49RkmXaNHBBwWoXW/WOY105IDHzUVKCn9Lp4sDsw1PoShlVbYDp+XvRJvC88C8ud+7wdUgPdF8tRP3EezFdvwv7qHSxXqmGt08tRgS4qwMcTEtBXU8efQ5sBWn3DpPm8OI27DsL28IkcYfDwTLDt0E5LRt+9B7w3tAYuXePVz9h5ukT2ClhrtTCszqOaWABt1MJxMqCpxKOIOHQVlcoeARttg6WsitfEm/2FtAXx42PgQ/FlKrAi+SRgOlqMjp0HqCbe0kvvpIhuvN5zCJbbNXw8pAaGu3tlS4AdOg2TE3lN9JbdkL1UDcN22M1fePuvDbRv3ccn8ofphCg4dgjpY5byc99cWS1HR8DlpoNo058ZYCtrW7sN7u9DcjYB07Fz4hRkwRV9TDo3bK7wNWHv+YTmlHX8Thk5t5eBDDAy521r8jDQ8JRyK181/+AKmYkoMlFexd5Kfhg9S9sA3Wj3AGMw3wMsvU0kfJ6zmwzR9aoWXCGZaKJfrqWrmF/H8So6hWNlwMtYsc/6OJUxf8Zm0HcD0wYwqjBoA+PF8EdpOANhAwlZ+AnZYkxwxkiZagAAAABJRU5ErkJggg==" InformativeScreenshot="414a270bc5513a731debad4b2554d4cb.png" Selector="&lt;html app='chrome.exe' title='Индикативные курсы валют — Московская Биржа | Рынки'/&gt;" Url="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" />
+                </uix:NApplicationCard.TargetApp>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NApplicationCard>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Choice EUR" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="dd07178c-df35-4afc-b894-2fd4d88326dc" Version="V1">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="375.2,252" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NSelectItem DisplayName="Select Item 'Выберите валюты'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="EUR/RUB - Евро к российскому рублю" ScopeIdentifier="dd07178c-df35-4afc-b894-2fd4d88326dc">
+                        <uix:NSelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="19">
+                            <x:String>USD/RUB - Доллар США к российскому рублю</x:String>
+                            <x:String>EUR/RUB - Евро к российскому рублю</x:String>
+                            <x:String>CAD/RUB - Канадский доллар к российскому рублю</x:String>
+                            <x:String>CHF/RUB - Швейцарский франк к российскому рублю</x:String>
+                            <x:String>GBP/RUB - Британский фунт к российскому рублю</x:String>
+                            <x:String>JPY/RUB - Японская йена к российскому рублю</x:String>
+                            <x:String>CNY/RUB - Китайский юань к российскому рублю</x:String>
+                            <x:String>TRY/RUB - Турецкая лира к российскому рублю</x:String>
+                            <x:String>UAH/RUB - Украинская гривна к российскому рублю</x:String>
+                            <x:String>INR/RUB – Индийская рупия к российскому рублю</x:String>
+                            <x:String>HKD/RUB - Гонконгский доллар к российскому рублю</x:String>
+                            <x:String>USD/CAD - Доллар США к канадскому доллару</x:String>
+                            <x:String>USD/CHF - Доллар США к швейцарскому франку</x:String>
+                            <x:String>USD/JPY - Доллар США к японской йене</x:String>
+                            <x:String>USD/CNY - Доллар США к китайскому юаню</x:String>
+                            <x:String>USD/TRY - Доллар США к турецкой лире</x:String>
+                            <x:String>USD/UAH - Доллар США к украинской гривне</x:String>
+                            <x:String>USD/INR - Доллар США к индийской рупии</x:String>
+                            <x:String>USD/HKD - Доллар США к гонконгскому доллару</x:String>
+                          </scg:List>
+                        </uix:NSelectItem.Items>
+                        <uix:NSelectItem.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" DesignTimeRectangle="941, 620, 472, 24" ElementType="DropDown" FriendlyName="'USD/RUB -'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' aaname='' /&gt;" Guid="1f33902d-5b10-4e18-a40a-bcffd73b81ab" InformativeScreenshot="8ece3405ceb189517d256a8b4a4f83dc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="FuzzySelector">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="765, 620, 170, 19" ElementType="Text" FriendlyName="'Выберите валюты'" FullSelectorArgument="&lt;webctrl aaname='Выберите валюты:' parentid='currency-rate-container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Выберите валюты:' parentid='currency-rate-container' tag='DIV' type='' check:text='Выберите валюты:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAK4AAAAXCAYAAACSyXRTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANsSURBVGhD7ZcJjtpAEEVzJ64VuAqZi0yYk5C5RCQSJPZ9qVC92NVV1cYGImCoL31p3N3u5dez8XyDMzoej3A4HJz3+73zbreDzWYD6/UaVqsVLJdLWCwWMJ/PYTabwXQ6hclk4jwej51Ho5HZfDOfBRd1Dl4N4AhxBDn+bTbfwrXAReXg3W63WYCjEWJ6bTZf60bgavBWAcyNQJvNt3BtcKOq4KUAU4jRsc1svoUbg4ui8HKAOcRm8//wReCi+KeDBjB1hNlsvoXrgTvoQafVglbhDvQGvksDWAOZXwv/fof293cYaH1mM3MDcLvwGS6HHx0P8FtsqQY45/4P+jC0oN37o44zm7kvAtep3z3BxtqCIsTUuBi9/oXQtn/CX9JmNtf17cCtABlOrV3yeSGvcxpCrx3fyHw89mEbzhXH8PW1dcq24peDm/yS+HMp7UJ0H97dfugqRM+j9ItPMnR5JrdftofkDKSv+mx+H52PoR/MxNfBa3mW++pCcEORaIhNwMX52l3okiKWoUb5NYpwQ1HLACME5Zqfb+m1WBfl5tFgliD54rP5273Typr4Wmz//FrbB8+ZZcqBSvcT8kgyRGlnawKuvz9/7vvown/OlIM0ATe8xdIw04B5kVCujRWquiBs3ViEWuDye1HauCg5XjtDKQWeJuDysSjtYVD33ATcx9SVnwokpABj6ngPK2oGcvcGCYH5t6fmeJ8GbjpHum4soASs7AuXKO1hDdYLzuYN96v7y83Fc64CF/vEW1DLRDlbGEf3QffytcHlT60CYwkRK6oaOg2s+o3g1QRcOh/bi5NS3MzDlZefIwdD0V/sTTkjz4XtweVD578S3GRtV2Ofy0uAWxwwB64Ll8GizufHxzBTADVpReIF8et2lLaz4JJC1pMyL82EQyn2GoA5B25F3rXPpqztz+vHfW1wXXAkEBGkD8yHwwNl0KPc/WSMBg6OKQorwfVvJLmHtAh1i3tqFQ+PXLOUMi/NROTD4VFgYvekQPk9V4LvpJ1NrkWz4+DSF8qj6PJ/zngYLmQ2JglZh4WOF0CIOWXh8/2o3Lr1wNXWyBdQngdN53QPQtFHfgmKfNn+K8E9SdSFnx+lnU3LrsxEe0DkA3Ff1QP3IeXDl7CZXkEGrukpZeCanlJPDK7plWXgmp5QAP8A9UCZsTndWDIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NSelectItem.Target>
+                      </uix:NSelectItem>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALeSURBVFhH7VZdSJNRGDbopqzs15+UbtIsS820giIq7CYNyiiKoC7M6CbqosCL/oMEi3IkWagFUQpBdGEEYj/qNgtTHGXloppmumopbljmfp/e8/MtNz7nqkkX7YGHne+cZ+d9znve75wvQj93Gf4ZE7IQNvCfG4jPDGcgSANxGdDNTlUf8+fvaIPJgHZGCvTR6WhZngPtzMWqGi9Z8Og0tK7I5f/TzVqirlM4pgGazLB+O/pr6+GyDcJYcASNkYnqWgreOCUJnWdK4Br8hs+37qIlcyM3r6pnDLQFOlqtIXsHPA4HFHicThj3qphgwSMp+MkLUing+NqP5tRs6Oek+eoVBsqAdvoitOcVyKl+gZno4CaShFZZ+Snf4AwepwutK3NHr4mxDLzYnC+nApwDNtkiuFww5h9G49RkmXaNHBBwWoXW/WOY105IDHzUVKCn9Lp4sDsw1PoShlVbYDp+XvRJvC88C8ud+7wdUgPdF8tRP3EezFdvwv7qHSxXqmGt08tRgS4qwMcTEtBXU8efQ5sBWn3DpPm8OI27DsL28IkcYfDwTLDt0E5LRt+9B7w3tAYuXePVz9h5ukT2ClhrtTCszqOaWABt1MJxMqCpxKOIOHQVlcoeARttg6WsitfEm/2FtAXx42PgQ/FlKrAi+SRgOlqMjp0HqCbe0kvvpIhuvN5zCJbbNXw8pAaGu3tlS4AdOg2TE3lN9JbdkL1UDcN22M1fePuvDbRv3ccn8ofphCg4dgjpY5byc99cWS1HR8DlpoNo058ZYCtrW7sN7u9DcjYB07Fz4hRkwRV9TDo3bK7wNWHv+YTmlHX8Thk5t5eBDDAy521r8jDQ8JRyK181/+AKmYkoMlFexd5Kfhg9S9sA3Wj3AGMw3wMsvU0kfJ6zmwzR9aoWXCGZaKJfrqWrmF/H8So6hWNlwMtYsc/6OJUxf8Zm0HcD0wYwqjBoA+PF8EdpOANhAwlZ+AnZYkxwxkiZagAAAABJRU5ErkJggg==" InformativeScreenshot="a11f18157e0e0de2c18cebf7bd54860b.png" Selector="&lt;html app='chrome.exe' title='Индикативные курсы валют — Московская Биржа | Рынки'/&gt;" Url="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" />
+                </uix:NApplicationCard.TargetApp>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NApplicationCard>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="ExtractTable EUR" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="5c2a55b8-cc44-492e-a3b8-1068fa62b6c7" Version="V1">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="375.2,252" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_ExtractDataTableEu]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Дата' ReferenceIdx='0' Name='Дата'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Курс промежуточного клиринга Значение' ReferenceIdx='1' Name='Курс промежуточного клиринга Значение'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Курс промежуточного клиринга Время' ReferenceIdx='2' Name='Курс промежуточного клиринга Время'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Курс основного клиринга Значение' ReferenceIdx='3' Name='Курс основного клиринга Значение'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Курс основного клиринга Время' ReferenceIdx='4' Name='Курс основного клиринга Время'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Date' attr='text' /&gt;&lt;column name='ValueMedium' attr='text' /&gt;&lt;column name='Time' attr='text' /&gt;&lt;column name='Value' attr='text' /&gt;&lt;column name='Time2' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="5c2a55b8-cc44-492e-a3b8-1068fa62b6c7" Version="V1">
+                        <uix:NExtractData.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="832, 327, 546, 605" FriendlyName="'Дата Курс'" FullSelectorArgument="&lt;webctrl aaname='Дата Курс промежуточного клиринга Курс основного клиринга Значен*' parentid='currency-rate-container' tag='TABLE' /&gt;" Guid="b71b06ff-05ba-465e-bec0-59155772a0b2" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Индикативные курсы валют — Московская Биржа | Рынки' /&gt;" SearchSteps="Selector" />
+                        </uix:NExtractData.Target>
+                      </uix:NExtractData>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALeSURBVFhH7VZdSJNRGDbopqzs15+UbtIsS820giIq7CYNyiiKoC7M6CbqosCL/oMEi3IkWagFUQpBdGEEYj/qNgtTHGXloppmumopbljmfp/e8/MtNz7nqkkX7YGHne+cZ+d9znve75wvQj93Gf4ZE7IQNvCfG4jPDGcgSANxGdDNTlUf8+fvaIPJgHZGCvTR6WhZngPtzMWqGi9Z8Og0tK7I5f/TzVqirlM4pgGazLB+O/pr6+GyDcJYcASNkYnqWgreOCUJnWdK4Br8hs+37qIlcyM3r6pnDLQFOlqtIXsHPA4HFHicThj3qphgwSMp+MkLUing+NqP5tRs6Oek+eoVBsqAdvoitOcVyKl+gZno4CaShFZZ+Snf4AwepwutK3NHr4mxDLzYnC+nApwDNtkiuFww5h9G49RkmXaNHBBwWoXW/WOY105IDHzUVKCn9Lp4sDsw1PoShlVbYDp+XvRJvC88C8ud+7wdUgPdF8tRP3EezFdvwv7qHSxXqmGt08tRgS4qwMcTEtBXU8efQ5sBWn3DpPm8OI27DsL28IkcYfDwTLDt0E5LRt+9B7w3tAYuXePVz9h5ukT2ClhrtTCszqOaWABt1MJxMqCpxKOIOHQVlcoeARttg6WsitfEm/2FtAXx42PgQ/FlKrAi+SRgOlqMjp0HqCbe0kvvpIhuvN5zCJbbNXw8pAaGu3tlS4AdOg2TE3lN9JbdkL1UDcN22M1fePuvDbRv3ccn8ofphCg4dgjpY5byc99cWS1HR8DlpoNo058ZYCtrW7sN7u9DcjYB07Fz4hRkwRV9TDo3bK7wNWHv+YTmlHX8Thk5t5eBDDAy521r8jDQ8JRyK181/+AKmYkoMlFexd5Kfhg9S9sA3Wj3AGMw3wMsvU0kfJ6zmwzR9aoWXCGZaKJfrqWrmF/H8So6hWNlwMtYsc/6OJUxf8Zm0HcD0wYwqjBoA+PF8EdpOANhAwlZ+AnZYkxwxkiZagAAAABJRU5ErkJggg==" InformativeScreenshot="414a270bc5513a731debad4b2554d4cb.png" Selector="&lt;html app='chrome.exe' title='Индикативные курсы валют — Московская Биржа | Рынки'/&gt;" Url="https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB" />
+                </uix:NApplicationCard.TargetApp>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NApplicationCard>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:OpenBrowser>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="585.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Work with DataTable&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <Sequence DisplayName="Work with DataTable" sap:VirtualizedContainerService.HintSize="585.6,68.8" sap2010:WorkflowViewState.IdRef="Sequence_46">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Int32" Name="int_RowIndex" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="Delete Column" sap:VirtualizedContainerService.HintSize="635.2,68.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Курс промежуточного клиринга Значение" DataTable="[dt_ExtractDataTable]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_1" />
+        <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Курс промежуточного клиринга Время" DataTable="[dt_ExtractDataTable]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_2" />
+        <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Курс основного клиринга Время" DataTable="[dt_ExtractDataTable]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_5" />
+        <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Курс промежуточного клиринга Значение" DataTable="[dt_ExtractDataTableEu]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_3" />
+        <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Курс промежуточного клиринга Время" DataTable="[dt_ExtractDataTableEu]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_4" />
+        <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Курс основного клиринга Время" DataTable="[dt_ExtractDataTableEu]" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="333.6,188" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_6" />
+      </Sequence>
+      <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Изменение(USD)" DataTable="[dt_ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="635.2,52.8" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:AddDataColumn>
+      <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" ColumnName="Дата" DataTable="[dt_ExtractDataTable]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="635.2,52.8" sap2010:WorkflowViewState.IdRef="SortDataTable_3" Order="Ascending" OutputDataTable="[dt_ExtractDataTable]" SortOrder="Ascending">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:SortDataTable>
+      <Assign sap:VirtualizedContainerService.HintSize="635.2,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Int32">[int_RowsCount]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Int32">[dt_ExtractDataTable.Rows.Count]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[int_RowIndex]" DataTable="[dt_ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="635.2,52.8" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="601.6,716" sap2010:WorkflowViewState.IdRef="Sequence_25">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If Condition="[int_RowIndex &lt;&gt; 0]" sap:VirtualizedContainerService.HintSize="560,623.2" sap2010:WorkflowViewState.IdRef="If_4">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="524.8,434.4" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[Double.TryParse(CurrentRow(&quot;Курс основного клиринга Значение&quot;).ToString,  double_tmp) and Double.TryParse((dt_ExtractDataTable.Rows( int_RowIndex-1).Item(&quot;Курс основного клиринга Значение&quot;)).ToString, double_tmp)]" sap:VirtualizedContainerService.HintSize="483.2,341.6" sap2010:WorkflowViewState.IdRef="If_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="304,152.8" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow("Изменение(USD)")]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Object">[Double.Parse(CurrentRow("Курс основного клиринга Значение").ToString.Replace(",","."))-Double.Parse((dt_ExtractDataTable.Rows( int_RowIndex-1).Item("Курс основного клиринга Значение")).ToString.Replace(",","."))]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="204,84.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_32">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEachRow>
+      <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Изменение(EUR)" DataTable="[dt_ExtractDataTableEu]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="635.2,52.8" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:AddDataColumn>
+      <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" ColumnName="Дата" DataTable="[dt_ExtractDataTableEu]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="635.2,52.8" sap2010:WorkflowViewState.IdRef="SortDataTable_4" Order="Ascending" OutputDataTable="[dt_ExtractDataTableEu]" SortOrder="Ascending">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:SortDataTable>
+      <Assign sap:VirtualizedContainerService.HintSize="635.2,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Int32">[int_RowsCount]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Int32">[dt_ExtractDataTableEu.Rows.Count]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[int_RowIndex]" DataTable="[dt_ExtractDataTableEu]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="635.2,836.8" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="601.6,716" sap2010:WorkflowViewState.IdRef="Sequence_30">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If Condition="[int_RowIndex &lt;&gt; 0]" sap:VirtualizedContainerService.HintSize="560,623.2" sap2010:WorkflowViewState.IdRef="If_5">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="524.8,434.4" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[Double.TryParse(CurrentRow(&quot;Курс основного клиринга Значение&quot;).ToString,  double_tmp) and Double.TryParse((dt_ExtractDataTableEu.Rows( int_RowIndex-1).Item(&quot;Курс основного клиринга Значение&quot;)).ToString, double_tmp)]" sap:VirtualizedContainerService.HintSize="483.2,341.6" sap2010:WorkflowViewState.IdRef="If_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="304,152.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Object">[CurrentRow("Изменение(EUR)")]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Object">[Double.Parse(CurrentRow("Курс основного клиринга Значение").ToString.Replace(",","."))-Double.Parse((dt_ExtractDataTableEu.Rows( int_RowIndex-1).Item("Курс основного клиринга Значение")).ToString.Replace(",","."))]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="204,84.8" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_34">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEachRow>
+      <ui:JoinDataTables DataTable1="[dt_ExtractDataTable]" DataTable2="[dt_ExtractDataTableEu]" DisplayName="Join Data Tables" sap:VirtualizedContainerService.HintSize="635.2,52.8" sap2010:WorkflowViewState.IdRef="JoinDataTables_1" JoinType="Full" OutputDataTable="[dt_Result]">
+        <ui:JoinDataTables.Arguments>
+          <scg:List x:TypeArguments="ui:JoinOperationArgument" Capacity="4">
+            <ui:JoinOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EQ">
+              <ui:JoinOperationArgument.Column1>
+                <InArgument x:TypeArguments="x:String">["Дата"]</InArgument>
+              </ui:JoinOperationArgument.Column1>
+              <ui:JoinOperationArgument.Column2>
+                <InArgument x:TypeArguments="x:String">["Дата"]</InArgument>
+              </ui:JoinOperationArgument.Column2>
+            </ui:JoinOperationArgument>
+          </scg:List>
+        </ui:JoinDataTables.Arguments>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:JoinDataTables>
+      <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" ColumnName="Дата" DataTable="[dt_Result]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="635.2,52.8" sap2010:WorkflowViewState.IdRef="SortDataTable_5" Order="Ascending" OutputDataTable="[dt_Result]" SortOrder="Ascending">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:SortDataTable>
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[int_RowIndex]" DataTable="[dt_Result]" DisplayName="For Each Row in Data Table DevisionError" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,238.4" sap2010:WorkflowViewState.IdRef="Sequence_42">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If Condition="[CurrentRow(&quot;Курс основного клиринга Значение_1&quot;).ToString=&quot;-&quot;]" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="If_7">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="304,152.8" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[CurrentRow("Курс основного клиринга Значение_1")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[""]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="204,84.8" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <If Condition="[CurrentRow(&quot;Курс основного клиринга Значение&quot;).ToString=&quot;-&quot;]" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="If_6">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="304,152.8" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[CurrentRow("Курс основного клиринга Значение")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Object">[""]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="204,84.8" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEachRow>
+    </Sequence>
+    <ui:WriteRange AddHeaders="False" DataTable="[dt_Result]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="585.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Лист1" StartingCell="A2" WorkbookPath="Result.xlsm">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:WriteRange>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="585.6,52.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="Result.xlsm">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Сделать" sap:VirtualizedContainerService.HintSize="375.2,315.2" sap2010:WorkflowViewState.IdRef="Sequence_37">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExecuteMacro ContinueOnError="{x:Null}" MacroOutput="{x:Null}" DisplayName="Execute Macro" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="ExecuteMacro_1" MacroName="Style" />
+            <ui:ExecuteMacro ContinueOnError="{x:Null}" MacroOutput="{x:Null}" DisplayName="Execute Macro" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="ExecuteMacro_2" MacroName="Devision" />
+            <ui:ExcelSaveWorkbook DisplayName="Save Workbook" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="ExcelSaveWorkbook_1" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ExcelApplicationScope>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="585.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Send Message&quot;]" />
+    <ui:CloseTab Browser="[ObjBrowser]" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="585.6,22.4" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+    <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="585.6,22.4" sap2010:WorkflowViewState.IdRef="GetPassword_4" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAX0GcWjKaeEaZ8CAaQ7UVkQAAAAACAAAAAAAQZgAAAAEAACAAAAAOBmCbHjaTQleFhAiCW/ngneyzIBaELD+IDV0MIWnCtwAAAAAOgAAAAAIAACAAAACmHgPL4oh0+JjMeX1xUDJXVhG1keJCj0ZbDQBiYbMauyAAAACr69Co9yjuBn2nH3tebrM3AZxE8lkBG1FLqHKLA/ccoUAAAADwazMeqFR2jHnzp7F9mT+Q7955biU1nDGeIXrTkHoUoEZuLLJLhUlN39JQgyPW+WJSEvpQ+71lJatUFSaa+DAy" Result="[pass]" />
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="Файл во вложении" DisplayName="Send SMTP Mail Message" Email="healenmotorina@mail.ru" EnableSSL="True" From="healenmotorina@mail.ru" sap:VirtualizedContainerService.HintSize="585.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_5" IsBodyHtml="False" Name="Helen" Password="[pass]" Port="465" SecureConnection="Auto" Server="smtp.mail.ru" Subject="PrMoex" To="healenmotorina@mail.ru">
+      <ui:SendMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">Result.xlsm</InArgument>
+        </scg:List>
+      </ui:SendMail.Files>
+    </ui:SendMail>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="585.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;End of work&quot;]" />
+  </Sequence>
+</Activity>
